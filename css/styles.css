@@ -36,6 +36,7 @@ body {
     font-family: 'Roboto', sans-serif; 
     color: #434455;
     background-color: #ffffff;
+
 }
 .visually-hidden {
     position: absolute;
@@ -102,9 +103,12 @@ color: #404bbf;
 display: flex;
 gap: 40px;
    }
-   .nav-list{
+   .change-page{
+    color: #404bbf;
+    position: relative;}
+
+   .nav-list, .change-page::after {
     padding: 24px 0;
-    
    }
  /*==== Contacts=========================================== */
 .page-contacts{
@@ -141,10 +145,20 @@ gap: 40px;
  /* ==============HERO SECTION =============================== */ 
 
  .hero-section{
-background:  #2e2f42;
+ max-width: 1440px;
+ margin: 0 auto;
 padding-top: 188px;
-  padding-bottom: 188px;
+padding-bottom: 188px;
+background:  #2e2f42;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+ rgba(46, 47, 66, 0.7)),
+  url(../images/people-office.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
 }
+
 .main-title  {
     max-width: 496px;
     color: #ffffff;
@@ -179,6 +193,13 @@ padding-top: 188px;
    border: none;
    background-color: #4d5ae5;
    border-radius: 4px;
+   margin-top: 48px;
+   margin-right: auto;
+   margin-left: auto;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   color: #ffffff;
+   background: #4d5ae5;
 }
 .button{
     
@@ -205,6 +226,22 @@ background-color: #404bbf;
     padding: 120px 0 120px;
     background: #ffffff;
 }
+.icon-list {
+    display: flex;
+    gap: 24px;
+  }
+  .container-icon {
+    display: flex;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+
+  }
 .criteria-section{
    display: flex;
     gap: 24px;
@@ -228,9 +265,9 @@ background-color: #404bbf;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #434455;}
 
-}
+    
 
 /* ========================< !--Our Team -->================== */
 
@@ -258,6 +295,10 @@ color: #2E2F42;
 }
 .team-section-list-item{
 width: calc((100% - 72px) / 4);
+background: var(--WHITE, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 background-color: #ffffff;
  }
@@ -281,9 +322,34 @@ margin-bottom: 8px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #434455;  
+    color: #434455;  }
 
+    .network-link {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+      }
+      
+      .network-link-item{
+        width: 40px;
+        height: 40px;
+      }
+        
+      .network-link-icon {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #4d5ae5;
 }
+    
+      .link-icon {
+        fill: #f4f4fd;
+
+      }
+
 
 
 /* ==============================Portfolio====================== */
