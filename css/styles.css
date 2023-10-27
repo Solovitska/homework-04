@@ -449,7 +449,8 @@ overflow: hidden;
 /* =================================Footer============================== */
 .page-footer{
     background: #2e2f42;
-    padding: 100px 0 100px;
+    padding-top: 100px; 
+    padding-bottom: 100px;
 }
 
 .flex-footer{
@@ -458,7 +459,7 @@ overflow: hidden;
 
 }
 .footer-one-item{
-    margin-left: 120px;}
+    margin-right: 120px;}
 
 .page-footer-list{
    font-family: "Raleway", sans-serif;
@@ -486,7 +487,8 @@ font-family: "Raleway";
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   max-width: 264px;}
+   max-width: 264px;
+min-height: 112px;}
 
 
 
